@@ -13,8 +13,8 @@
    
     
     <context:property-placeholder location="classpath:Detail.properties"/>
-     <bean id="wishText2" class="DependencyInject.WishMessage2"></bean>   
-    <bean id="messageToPlayerToLoosWeight" class="DependencyInject.PlayerTasks2">  		
+     <bean id="wishText2" class="DependencyInject.HappyFortuneService1"></bean>   
+    <bean id="messageToPlayerToLoosWeight" class="DependencyInject.HappyFortuneService2">  		
     	<constructor-arg ref="wishText2"></constructor-arg>
     	<property name="wishinterface" ref="wishText2"/>
     	<property name="name" value="${x.name}"/>

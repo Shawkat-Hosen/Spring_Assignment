@@ -2,7 +2,7 @@ package DependencyInject;
 
 import java.util.Random;
 
-public class WishMessage2 implements WishInterface{
+public class HappyFortuneService1 implements FortuneServiceInterface{
 	@Override
 	public String wishLuck() {	
 		return "Good luck boys ,Have a great a day ahead ";
@@ -17,21 +17,8 @@ public class WishMessage2 implements WishInterface{
 	    return ranList[randomElement];
 	}
 	
-	@Override
-	public void createInitiate() {
-		
-	}
-
-	@Override
-	public void createDestruction() {
-		
-	}
+	
 
 
-	@Override
-	public String sentMessage() {
-		// TODO Auto-generated method stub
-		return null;
-	}
 
 }

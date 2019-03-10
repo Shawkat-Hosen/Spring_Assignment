@@ -1,5 +1,5 @@
 package DependencyInject;
-public interface WishInterface extends CoachTask {
+public interface FortuneServiceInterface{
 public String wishLuck();
 public String randomShow();
 

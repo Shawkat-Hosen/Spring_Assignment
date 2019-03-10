@@ -9,7 +9,7 @@
    http://www.springframework.org/schema/context
    http://www.springframework.org/schema/context/spring-context.xsd" 
        >       
-     <bean id="wishText2" class="DependencyInject.ProtoType" init-method="createInitiate" destroy-method="createDestruction" scope="prototype"></bean>   
+     <bean id="wishText2" class="DependencyInject.ProtoType" init-method="createInitiate"  scope="prototype"></bean>   
      <bean id="wishText" class="DependencyInject.SingleTone" init-method="createInitiate" destroy-method="createDestruction"></bean>   
   
 </beans>

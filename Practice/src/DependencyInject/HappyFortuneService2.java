@@ -1,6 +1,6 @@
 package DependencyInject;
 
-public class PlayerTasks2 implements CoachTask{
+public class HappyFortuneService2 implements CoachTask{
 
 public String name ,email ,university;
 	
@@ -23,17 +23,17 @@ public String getName() {
 		this.university = university;
 	}
 
-private WishInterface wishinterface; 
+private FortuneServiceInterface wishinterface; 
 
-public PlayerTasks2(WishInterface wish) {	
+public HappyFortuneService2(FortuneServiceInterface wish) {	
 	System.out.println("Its the Constructor values ");
 	wishinterface = wish;
 }
 
-public PlayerTasks2() {
+public HappyFortuneService2() {
 	System.out.println("Its the Setter showing Used method ");
 }
-public void setWishinterface(WishInterface wishinterface) {
+public void setWishinterface(FortuneServiceInterface wishinterface) {
 	System.out.println("Its the Setter Value inside setter ");
 	this.wishinterface = wishinterface;
 }

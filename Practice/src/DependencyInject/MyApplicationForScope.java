@@ -5,8 +5,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class MyApplicationForScope {
 public static void main(String[] a) {
 	ClassPathXmlApplicationContext ap=new ClassPathXmlApplicationContext("DependencyInject/ConfigureFile2.xml");
-	
-	
+		
 
 	// for single tone
 	

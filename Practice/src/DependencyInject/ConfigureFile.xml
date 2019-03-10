@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xmlns:context="http://www.springframework.org/schema/context"
+   xsi:schemaLocation="http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context.xsd" 
+       >
+
+   
+    
+    <context:property-placeholder location="classpath:Detail.properties"/>
+     <bean id="wishText2" class="DependencyInject.WishMessage2"></bean>   
+    <bean id="messageToPlayerToLoosWeight" class="DependencyInject.PlayerTasks2">  		
+    	<constructor-arg ref="wishText2"></constructor-arg>
+    	<property name="wishinterface" ref="wishText2"/>
+    	<property name="name" value="${x.name}"/>
+    	<property name="email" value="${x.email}"/>
+    	<property name="university" value="${x.university}"/>
+    </bean>
+    
+  	
+   
+</beans>
+	

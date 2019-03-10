@@ -2,9 +2,9 @@ package Assignment1;
 
 public class Class2 extends ClassStatic{
 	public void m() {
-		System.out.println("Come and have fun2");
+		System.out.println("Practice hard");
 	}
 	public void m2() {
-		System.out.println("Come and have fun7");
+		System.out.println("practice much more");
 	}
 }

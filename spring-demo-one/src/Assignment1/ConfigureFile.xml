@@ -5,7 +5,7 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <!-- bean definitions here -->
-    <bean id="show1" class="Assignment1.Cls"></bean>
+    <bean id="show1" class="Assignment1.Cls" ></bean>
     <bean id="show" class="Assignment1.ShowInitiation"></bean>
     <bean id="show2" class="Assignment1.Class2"></bean>
 

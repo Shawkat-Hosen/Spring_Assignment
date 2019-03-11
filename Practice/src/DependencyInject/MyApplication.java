@@ -13,9 +13,9 @@ public static void main(String[] a) {
 	System.out.println(i2.getEmail());
 	System.out.println(i2.getUniversity());
 	System.out.println(" ");
-	System.out.println(i.randomShow());	
+	System.out.println(i2.randomShow());	
 	System.out.println(i.sentMessage());
-	System.out.println(i.wishLuck());
+	System.out.println(i2.wishLuck());
 	
 	
 	ap.close();

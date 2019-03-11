@@ -1,5 +1,4 @@
 package DependencyInject;
-
 public class HappyFortuneService2 implements CoachTask{
 
 public String name ,email ,university;

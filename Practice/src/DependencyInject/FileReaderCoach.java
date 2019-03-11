@@ -1,10 +1,14 @@
 package DependencyInject;
 
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
+
 public class FileReaderCoach implements CoachTask {
 	
 	@Autowired
@@ -36,10 +40,10 @@ public class FileReaderCoach implements CoachTask {
 		// TODO Auto-generated method stub
 
 	}
-
+	@PreDestroy
 	@Override
 	public void createDestruction() {
-		// TODO Auto-generated method stub
+		System.out.println("OK");
 
 	}
 

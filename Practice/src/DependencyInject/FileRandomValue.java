@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -19,8 +21,8 @@ public class FileRandomValue implements FortuneServiceInterface {
 		// create a random number generator
 		private Random myRandom = new Random();
 		
-		
-		public FileRandomValue() {
+		@PostConstruct
+		public void FileRan() {
 			File theFile = new File(fileName);			
 			System.out.println("Reading fortunes from file: " + theFile);
 			System.out.println("File exists: " + theFile.exists());			
